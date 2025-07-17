@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lewis Njoroge 9547</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f0f0, #e0eaff);
+      color: #333;
+    }
+    header {
+      background-color: #293241;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .intro {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .read-more {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #3d5a80;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .read-more:hover {
+      background-color: #2e3e5c;
+    }
+    .form-section {
+      text-align: center;
+      padding: 2rem;
+      background: #ffffff;
+    }
+    .form-section input, .form-section textarea {
+      display: block;
+      margin: 1rem auto;
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .form-section button {
+      padding: 0.7rem 1.5rem;
+      background-color: #98c1d9;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .form-section button:hover {
+      background-color: #7baecb;
+    }
+    .join-section {
+      background-color: #f7f7f7;
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #3d5a80;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lewis Njoroge 9547</h1>
+    <p>A teenage boy dreaming to become a great programmer</p>
+  </header>
+
+  <section class="intro">
+    <p>Lewis has always dreamed of coding, and thanks to his supportive parents, Edwin & Monicah, that dream feels closer than ever. Explore his journey below.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="family-photo1.jpg" alt="Family Photo 1">
+    <img src="lewis-coding.jpg" alt="Lewis Coding">
+    <img src="family-photo2.jpg" alt="Family Photo 2">
+  </section>
+
+  <button class="read-more" onclick="document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });">
+    READ MORE
+  </button>
+
+  <section class="form-section" id="formSection">
+    <h2>Tell us about you</h2>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Write something nice about Lewis..."></textarea>
+    <button onclick="document.getElementById('joinSection').scrollIntoView({ behavior: 'smooth' });">Join Lewis and Family</button>
+  </section>
+
+  <section class="join-section" id="joinSection">
+    <p>Thank you for supporting Lewis and his family. Your words and encouragement mean the world. Together, we can help Lewis reach his dreams of becoming a programmer!</p>
+  </section>
+
+  <footer>
+    <p>❤️ Donate to Lewis and Family • All support goes directly to Lewis's learning journey</p>
+  </footer>
+</body>
+</html>
